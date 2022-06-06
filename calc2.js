@@ -6,7 +6,6 @@ function getData(btnValue){
     }
     document.getElementById('numInput').value+=btnValue.value;   
     document.getElementById('conNum').innerHTML+=btnValue.value;
-    
     calculate();
     document.getElementById('conSign').innerHTML='';
     document.getElementById('PW').innerHTML+=btnValue.value;

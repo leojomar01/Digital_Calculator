@@ -33,17 +33,15 @@ function allClear(){
 
 //selecting operator------
 function getOperator(operator){
-    var x = document.getElementById('conSign').innerHTML;
-    var y = operator.value;
-    if(x!=""){
-
-        calculate(x);
+    var conSign = document.getElementById('conSign').innerHTML;
+    var conOptr = operator.value;
+    if(conSign!=""){
+        calculate(conSign);
         console.log('calculated')
     }
     getcontainerNum();
-
-    document.getElementById('conSign').innerHTML=y;
-    document.getElementById('numInput').value=y
+    document.getElementById('conSign').innerHTML=conOptr;
+    document.getElementById('numInput').value=conOptr;
 }
 
 //calculate----------
@@ -87,6 +85,11 @@ function getcontainerNum(){
     console.log(num)
     document.getElementById('conNum').innerHTML=num;
 }
+
+
+
+
+
 function styles(styleNum){
     var x = styleNum.value
     switch (x){
@@ -108,9 +111,11 @@ function enableBtn(){
 
 function getPW(){
     var pw = document.getElementById('PW').innerHTML;
-    console.log(pw)
     if(pw=='1234567890'){
         document.getElementById('styles').style.visibility='visible';
+        document.getElementById('message').style.visibility='hidden';
+        document.getElementById('message').style.position='absolute';
+
     }
 }
 
