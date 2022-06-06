@@ -1,0 +1,572 @@
+* {
+  font-family: cursive;
+}
+
+.hidden {
+  visibility: hidden;
+  height: 0;
+  position: absolute;
+}
+
+.history {
+  visibility: hidden;
+  position: absolute;
+  margin: 10px;
+  background-color: white;
+  border: 1px double;
+  padding: 5px;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.calculator1 .calcHead {
+  display: -ms-grid;
+  display: grid;
+  width: 291.66667px;
+  height: 134.61538px;
+  margin-bottom: 5px;
+}
+
+.calculator1 .calcHead input {
+  width: 100%;
+  text-align: end;
+}
+
+.calculator1 .calcHead .top {
+  height: 44.87179px;
+}
+
+.calculator1 .calcHead .btm {
+  height: 67.30769px;
+  font-size: 2rem;
+}
+
+.calculator1 .calcBody {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "btnAc btnDel operatorMod operatorDiv" "num7 num8 num9 operatorMul" "num4 num5 num6 operatorSub" "num1 num2 num3 operatorAdd" "num0 num0 point btnEqual";
+  width: 291.66667px;
+  height: 350px;
+  gap: 5px;
+}
+
+.calculator1 .calcBody .num0 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: num0;
+}
+
+.calculator1 .calcBody .num1 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: num1;
+}
+
+.calculator1 .calcBody .num2 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: num2;
+}
+
+.calculator1 .calcBody .num3 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: num3;
+}
+
+.calculator1 .calcBody .num4 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: num4;
+}
+
+.calculator1 .calcBody .num5 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: num5;
+}
+
+.calculator1 .calcBody .num6 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: num6;
+}
+
+.calculator1 .calcBody .num7 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: num7;
+}
+
+.calculator1 .calcBody .num8 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: num8;
+}
+
+.calculator1 .calcBody .num9 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: num9;
+}
+
+.calculator1 .calcBody .btnAc {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: btnAc;
+}
+
+.calculator1 .calcBody .btnDel {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: btnDel;
+}
+
+.calculator1 .calcBody .btnEqual {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: btnEqual;
+}
+
+.calculator1 .calcBody .operatorMod {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: operatorMod;
+}
+
+.calculator1 .calcBody .operatorDiv {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: operatorDiv;
+}
+
+.calculator1 .calcBody .operatorMul {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: operatorMul;
+}
+
+.calculator1 .calcBody .operatorSub {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: operatorSub;
+}
+
+.calculator1 .calcBody .operatorAdd {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: operatorAdd;
+}
+
+.calculator1 .calcBody .point {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: point;
+}
+
+.calculator1 .styles {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  visibility: hidden;
+}
+
+.calculator2 .calcHead {
+  display: -ms-grid;
+  display: grid;
+  width: 291.66667px;
+  height: 134.61538px;
+  margin-bottom: 5px;
+}
+
+.calculator2 .calcHead input {
+  width: 100%;
+  text-align: end;
+}
+
+.calculator2 .calcHead .top {
+  height: 44.87179px;
+}
+
+.calculator2 .calcHead .btm {
+  height: 67.30769px;
+  font-size: 2rem;
+}
+
+.calculator2 .calcBody {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "btnAc btnDel operatorMod operatorDiv" "num7 num8 num9 operatorMul" "num4 num5 num6 operatorSub" "num1 num2 num3 operatorAdd" "num0 num0 point btnEqual";
+  width: 291.66667px;
+  height: 350px;
+  gap: 5px;
+}
+
+.calculator2 .calcBody .num0 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: num0;
+}
+
+.calculator2 .calcBody .num1 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: num1;
+}
+
+.calculator2 .calcBody .num2 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: num2;
+}
+
+.calculator2 .calcBody .num3 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: num3;
+}
+
+.calculator2 .calcBody .num4 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: num4;
+}
+
+.calculator2 .calcBody .num5 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: num5;
+}
+
+.calculator2 .calcBody .num6 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: num6;
+}
+
+.calculator2 .calcBody .num7 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: num7;
+}
+
+.calculator2 .calcBody .num8 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: num8;
+}
+
+.calculator2 .calcBody .num9 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: num9;
+}
+
+.calculator2 .calcBody .btnAc {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: btnAc;
+}
+
+.calculator2 .calcBody .btnDel {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: btnDel;
+}
+
+.calculator2 .calcBody .btnEqual {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: btnEqual;
+}
+
+.calculator2 .calcBody .operatorMod {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: operatorMod;
+}
+
+.calculator2 .calcBody .operatorDiv {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: operatorDiv;
+}
+
+.calculator2 .calcBody .operatorMul {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: operatorMul;
+}
+
+.calculator2 .calcBody .operatorSub {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: operatorSub;
+}
+
+.calculator2 .calcBody .operatorAdd {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: operatorAdd;
+}
+
+.calculator2 .calcBody .point {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: point;
+}
+
+.calculator2 .styles {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  visibility: hidden;
+}
+
+.calculator3 .calcHead {
+  display: -ms-grid;
+  display: grid;
+  width: 291.66667px;
+  height: 134.61538px;
+  margin-bottom: 5px;
+}
+
+.calculator3 .calcHead input {
+  width: 100%;
+  text-align: end;
+}
+
+.calculator3 .calcHead .top {
+  height: 44.87179px;
+}
+
+.calculator3 .calcHead .btm {
+  height: 67.30769px;
+  font-size: 2rem;
+}
+
+.calculator3 .calcBody {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "btnAc btnDel operatorMod operatorDiv" "num7 num8 num9 operatorMul" "num4 num5 num6 operatorSub" "num1 num2 num3 operatorAdd" "num0 num0 point btnEqual";
+  width: 291.66667px;
+  height: 350px;
+  gap: 5px;
+}
+
+.calculator3 .calcBody .num0 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: num0;
+}
+
+.calculator3 .calcBody .num1 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: num1;
+}
+
+.calculator3 .calcBody .num2 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: num2;
+}
+
+.calculator3 .calcBody .num3 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: num3;
+}
+
+.calculator3 .calcBody .num4 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: num4;
+}
+
+.calculator3 .calcBody .num5 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: num5;
+}
+
+.calculator3 .calcBody .num6 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: num6;
+}
+
+.calculator3 .calcBody .num7 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: num7;
+}
+
+.calculator3 .calcBody .num8 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: num8;
+}
+
+.calculator3 .calcBody .num9 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: num9;
+}
+
+.calculator3 .calcBody .btnAc {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: btnAc;
+}
+
+.calculator3 .calcBody .btnDel {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: btnDel;
+}
+
+.calculator3 .calcBody .btnEqual {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: btnEqual;
+}
+
+.calculator3 .calcBody .operatorMod {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: operatorMod;
+}
+
+.calculator3 .calcBody .operatorDiv {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: operatorDiv;
+}
+
+.calculator3 .calcBody .operatorMul {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: operatorMul;
+}
+
+.calculator3 .calcBody .operatorSub {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: operatorSub;
+}
+
+.calculator3 .calcBody .operatorAdd {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: operatorAdd;
+}
+
+.calculator3 .calcBody .point {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: point;
+}
+
+.calculator3 .styles {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  visibility: hidden;
+}
+
+.calculator3 {
+  background-color: black;
+  border: 5px solid magenta;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.calculator3 input {
+  border-radius: 20%;
+  background-color: #410328;
+  color: white;
+}
+
+.calculator3 button {
+  outline-offset: 4px;
+  border-radius: 50%;
+  background-color: #410328;
+  color: white;
+  -webkit-box-shadow: 0 0 5px black;
+          box-shadow: 0 0 5px black;
+  text-shadow: 0 0 7px #d80707, 0 0 10px red, 0 0 21px #f40000, 0 0 42px #b9f40a, 0 0 82px #b9f40a, 0 0 92px #b9f40a, 0 0 102px #b9f40a, 0 0 151px #b9f40a;
+}
+
+.calculator3 button:hover {
+  background-color: #710039;
+}
+
+.calculator2 {
+  background-color: #e7e374;
+  border: 5px double black;
+  border-radius: 50px;
+  padding: 30px;
+}
+
+.calculator2 button {
+  border-radius: 5px;
+  background-color: #060003;
+  color: white;
+  -webkit-box-shadow: 0 0 5px #131313;
+          box-shadow: 0 0 5px #131313;
+}
+
+.calculator2 button:hover {
+  background-color: #4e4a31;
+}
+
+.calculator1 {
+  background-color: gray;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.calculator1 .calcHead {
+  height: 100px;
+}
+
+.calculator1 .calcHead .top {
+  visibility: hidden;
+  position: absolute;
+}
+
+.calculator1 .calcBody {
+      grid-template-areas: "btnAc btnDel operatorMod operatorDiv" "num7 num8 num9 operatorMul" "num4 num5 num6 operatorSub" "num1 num2 num3 operatorAdd" "point  num0 btnEqual operatorAdd";
+}
+
+.calculator1 button {
+  background-color: white;
+  border-radius: 2px;
+  border: 1px transparent solid;
+  outline-offset: 4px;
+}
+
+.calculator1 button:hover {
+  color: white;
+  background-color: gray;
+  border: 1px solid;
+}

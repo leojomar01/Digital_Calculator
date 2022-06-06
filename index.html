@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="css/index.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <p class="hidden" id="conSign"></p>
+    <p class="hidden" id="conAns"></p>
+    <p class="hidden" id="conNum"></p>
+
+    <p id="message">press 1234567890 to enable style button <br>
+    press AC to enable the button</p>
+    <p class="hidden" id="PW"></p>
+
+<div id="div" class="calculator1">
+    <div class="calcHead">
+        <input type="text" class="top" readonly id="numOutput" >
+        <input type="text" class="btm" readonly id="numInput" value="0">
+    </div>
+
+    <div class="calcBody">
+        <!-- function button -->
+        <button class="btnAc" onclick="allClear()">AC</button>
+        <button class="btnDel" onclick="deleteData()" value="">del</button>
+        <button class="btnEqual" onclick="getAns()" value="=">=</button>
+
+        <!-- operator button -->
+        <button class="operatorMod" onclick="getOperator(this)" value="%">%</button>
+        <button class="operatorDiv" onclick="getOperator(this)" value="÷">÷</button>
+        <button class="operatorMul" onclick="getOperator(this)" value="x">x</button>
+        <button class="operatorSub" onclick="getOperator(this)" value="-">-</button>
+        <button class="operatorAdd" onclick="getOperator(this)" value="+">+</button>
+
+        <!-- number button -->
+        <button class="num1" onclick="getData(this)" value="1">1</button>
+        <button class="num2" onclick="getData(this)" value="2">2</button>
+        <button class="num3" onclick="getData(this)" value="3">3</button>
+        <button class="num4" onclick="getData(this)" value="4">4</button>
+        <button class="num5" onclick="getData(this)" value="5">5</button>
+        <button class="num6" onclick="getData(this)" value="6">6</button>  
+        <button class="num7" onclick="getData(this)" value="7">7</button>
+        <button class="num8" onclick="getData(this)" value="8">8</button>
+        <button class="num9" onclick="getData(this)" value="9">9</button>
+        <button class="num0" onclick="getData(this)" value="0">0</button>
+
+        <button class="point" onclick="getData(this)" value=".">.</button>
+    </div>
+    <div id="styles" class="styles">
+        <button id="style1" onclick="styles(this)" value="style1">style1</button>
+        <button id="style2" onclick="styles(this)" value="style2">style2</button>
+        <button id="style3" onclick="styles(this)" value="style3">style3</button>
+    </div>
+</div>
+
+<!-- there are 2 Javascript just rename calc2 or calc1 -->
+<script src="calc2.js">
+
+</script>
+</body>
+</html>
